@@ -6,26 +6,138 @@ body {
 }
 
 /* Hero Section */
-.bg-blue-100 {
-  background: linear-gradient(135deg, #dbeafe, #c7d2fe);
-  padding: 5rem 1rem;
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 10%;
+  background: linear-gradient(135deg, #ca898e 0%, #cc9eab 100%);
+  color: #fff;
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.bg-blue-100 h2 {
-  color: #1e3a8a;
+/* Left content */
+.hero-content {
+  max-width: 50%;
+  z-index: 2;
 }
 
-.bg-blue-100 .bg-blue-800 {
-  background-color: #1e40af;
-  transition: background 0.3s ease;
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
-.bg-blue-100 .bg-blue-800:hover {
-  background-color: #1d4ed8;
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-.bg-blue-100 .bg-white:hover {
+.sub-info {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.hero-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem 0;
+}
+
+.hero-features li {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-green {
+  background-color: #34d399;
+  color: #fff;
+}
+
+.btn-green:hover {
+  background-color: #10b981;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #333;
+  margin-left: 1rem;
+}
+
+.btn-white:hover {
   background-color: #f3f4f6;
+}
+
+/* Hero image */
+.hero-image {
+  max-width: 45%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image img {
+  max-width: 100%;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Floating elements */
+.floating-elements {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.float-item {
+  width: 60px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-item:nth-child(2) {
+  animation-delay: 2s;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Background decorative shapes */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  bottom: -150px;
+  right: -100px;
 }
 
 /* Feature Cards */

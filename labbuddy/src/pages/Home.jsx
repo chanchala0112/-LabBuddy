@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import "../styles/Home.css";
+import scienceIllustration from "../assets/science-illustration.webp";
 
 
 const Home = () => {
@@ -8,14 +9,37 @@ const Home = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-blue-100 py-20 text-center">
-        <h2 className="text-4xl font-bold mb-4">Organize Your Virtual Science Labs Easily!</h2>
-        <p className="mb-6 text-lg text-gray-700">Create, store, and explore science lab reports with ease.</p>
-        <div className="space-x-4">
-          <a href="/login" className="bg-blue-800 text-white px-6 py-2 rounded">Get Started</a>
-          <a href="#simulations" className="bg-white text-blue-800 border px-6 py-2 rounded">Watch Demo</a>
+
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Organize Your Virtual Science Labs Easily!</h1>
+          <p>Create, store, and explore science lab reports with ease.</p>
+          <p class="sub-info">
+            LabBuddy is your all-in-one platform for virtual lab work — from documenting experiments to 
+            running simulations and sharing findings with classmates or instructors. 
+            Accessible anywhere, anytime.
+          </p>
+          <ul class="hero-features">
+            <li>✔ Save unlimited lab reports securely</li>
+            <li>✔ Run interactive experiment simulations</li>
+            <li>✔ Collaborate with classmates in real-time</li>
+            <li>✔ Export results as PDF for easy submission</li>
+          </ul>
+          <div class="hero-buttons">
+            <a href="#register" class="btn btn-green">Get Started</a>
+            <a href="#demo" class="btn btn-white">Watch Demo</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src={scienceIllustration} alt="Science Lab Illustration" />
+          <div class="floating-elements">
+            <img src="images/test-tube.png" alt="Test Tube" class="float-item" />
+            <img src="images/molecule.png" alt="Molecule" class="float-item" />
+          </div>
         </div>
       </section>
+
 
       {/* Key Features */}
       <section className="py-16 bg-white text-center">
