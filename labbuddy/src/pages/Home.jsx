@@ -1,6 +1,5 @@
 import Header from '../components/Header';
-import './Home.css';
-import "../styles/global.css";
+import "../styles/Home.css";
 
 
 const Home = () => {

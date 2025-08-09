@@ -1,0 +1,87 @@
+/* Home.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.bg-blue-100 {
+  background: linear-gradient(135deg, #dbeafe, #c7d2fe);
+  padding: 5rem 1rem;
+}
+
+.bg-blue-100 h2 {
+  color: #1e3a8a;
+}
+
+.bg-blue-100 .bg-blue-800 {
+  background-color: #1e40af;
+  transition: background 0.3s ease;
+}
+
+.bg-blue-100 .bg-blue-800:hover {
+  background-color: #1d4ed8;
+}
+
+.bg-blue-100 .bg-white:hover {
+  background-color: #f3f4f6;
+}
+
+/* Feature Cards */
+section.bg-white {
+  background-color: #ffffff;
+}
+
+section.bg-white h3 {
+  color: #111827;
+}
+
+section.bg-white .border {
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  transition: transform 0.3s ease;
+}
+
+section.bg-white .border:hover {
+  transform: translateY(-5px);
+  background: #ffffff;
+  border-color: #d1d5db;
+}
+
+/* Vibrant Footer */
+footer {
+  background: linear-gradient(135deg, #ec4899, #de3641, #ec4899);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+footer a {
+  color: #facc15;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fcd34d;
+  text-decoration: underline;
+}

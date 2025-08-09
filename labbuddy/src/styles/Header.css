@@ -1,0 +1,49 @@
+/* Header Container */
+header {
+  background: linear-gradient(90deg, #f87171, #fca5a5); /* soft gradient light red */
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo / Title */
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Navigation Links */
+header nav {
+  display: flex;
+  gap: 1.5rem; /* spacing between links */
+}
+
+header nav a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffe4e4;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+}
+
+/* Login Button */
+header nav .login-link {
+  background-color: white;
+  color: #f87171;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+header nav .login-link:hover {
+  background-color: #ffe4e4;
+  color: #c53030;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
